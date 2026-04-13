@@ -474,3 +474,72 @@
         font-size: 18px;
     }
 }
+
+
+/* Center button text and icon */
+.btn-primary,
+.submit-btn,
+.contact-form button[type="submit"] {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+}
+
+/* Remove any extra padding that might cause misalignment */
+.contact-form button {
+    white-space: nowrap;
+}
+
+
+
+
+
+
+
+
+
+
+/* Logo with Dumbbell Icon */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo i {
+    font-size: 32px;
+    color: var(--primary);
+    transition: var(--transition);
+}
+
+.logo:hover i {
+    transform: scale(1.1) rotate(10deg);
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 26px;
+    letter-spacing: 2px;
+    color: var(--text-light);
+}
+
+.logo h1::first-letter {
+    color: var(--primary);
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .logo i {
+        font-size: 24px;
+    }
+    
+    .logo h1 {
+        font-size: 20px;
+    }
+    
+    .logo {
+        gap: 8px;
+    }
+}
